@@ -27,6 +27,7 @@ public class Solution0 {
 
     /*
         dps+回溯
+        状态压缩
      */
     public void solveSudoku(char[][] board) {
         if (board == null || board.length == 0 || board[0] == null || board[0].length == 0) {
