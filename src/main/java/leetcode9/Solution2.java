@@ -51,10 +51,7 @@ public class Solution2 {
                 统计所有节点的入度
                 如果存在一个入度为2的节点,同时必有一个入度为0的节点，可能有环，可能无环
                 如果均是入度为1的节点，必有环
-
-
-
-
+        并查集好用
      */
     public int[] findRedundantDirectedConnection(int[][] edges) {
         int n = edges.length;
