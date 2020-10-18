@@ -1,6 +1,7 @@
 package leetcode2;
 
-import org.jetbrains.annotations.NotNull;
+
+import com.sun.istack.internal.NotNull;
 
 import java.util.HashMap;
 
@@ -30,7 +31,7 @@ public class Solution11 {
         return Math.max(case1, case2);
     }
 
-    private int dps(int @NotNull [] nums, int index) {
+    private int dps(int[] nums, int index) {
         if (index >= nums.length) {
             return 0;
         }

@@ -1,6 +1,5 @@
 package leetcode3;
 
-import org.jetbrains.annotations.NotNull;
 
 public class Solution7 {
     /*
@@ -92,11 +91,11 @@ public class Solution7 {
         return true;
     }
 
-    public void union(int @NotNull [] parent, int index1, int index2) {
+    public void union(int[] parent, int index1, int index2) {
         parent[find(parent, index1)] = find(parent, index2);
     }
 
-    public int find(int @NotNull [] parent, int index) {
+    public int find(int[] parent, int index) {
         while (parent[index] != index) {
             parent[index] = parent[parent[index]];
             index = parent[index];
