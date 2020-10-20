@@ -8,7 +8,7 @@ public class Solution2 {
     /*
         方法一：枚举所有的可能数组，对他们进行判断，直到得到一个漂亮数组为止
                O(n!*n3)
-        方法二：
+        方法二：利用性质
      */
     private  int[] res;
     private int n;
