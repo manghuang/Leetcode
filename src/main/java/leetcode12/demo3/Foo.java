@@ -4,6 +4,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Foo {
+    // 锁对象
+    // 可以处理竞争关系线程的问题
     private Lock lock = new ReentrantLock();
     public Foo() {
 

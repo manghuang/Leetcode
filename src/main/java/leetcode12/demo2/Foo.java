@@ -2,6 +2,8 @@ package leetcode12.demo2;
 
 public class Foo {
 
+    // 锁对象
+    // 可以处理竞争关系线程的问题
     public Foo() {
 
     }

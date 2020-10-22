@@ -8,8 +8,9 @@ public class Foo {
     //等待、通知机制
     //锁对象
     //条件对象
-    private Lock lock = new ReentrantLock();
-    private Condition condition = lock.newCondition();
+    // 可以处理协作关系线程的问题
+    private final Lock lock = new ReentrantLock();
+    private final Condition condition = lock.newCondition();
     private int single = 1;
 
     public Foo() {
