@@ -1,9 +1,11 @@
-package leetcode12.demo4;
+package leetcode12.Solution0.demo4;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
+/*
+    使用一个共享变量，判断一个条件
+ */
 public class Foo {
     //等待、通知机制
     //锁对象

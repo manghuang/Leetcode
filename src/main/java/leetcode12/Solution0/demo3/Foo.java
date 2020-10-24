@@ -1,8 +1,10 @@
-package leetcode12.demo3;
+package leetcode12.Solution0.demo3;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
+/*
+    无共享变量
+ */
 public class Foo {
     // 锁对象
     // 可以处理竞争关系线程的问题

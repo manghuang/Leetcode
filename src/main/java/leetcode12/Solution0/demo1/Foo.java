@@ -1,5 +1,7 @@
-package leetcode12.demo1;
-
+package leetcode12.Solution0.demo1;
+/*
+    使用一个共享变量，判断一个条件
+ */
 public class Foo {
     // 信号量
     // 可以处理协作关系线程的问题

@@ -1,5 +1,7 @@
-package leetcode12.demo2;
-
+package leetcode12.Solution0.demo2;
+/*
+    无共享变量
+ */
 public class Foo {
 
     // 锁对象
