@@ -7,7 +7,7 @@ public class Solution25 {
 
     /*
         全排序：hashMap
-        部分排序：最小堆来实现,优先队列
+        部分排序：堆来实现,优先队列
      */
     public int[][] kClosest(int[][] points, int K) {
         int length = points.length;
