@@ -8,13 +8,9 @@ public class LRUCache {
 
     private final int capacity;
     private final Map<Integer, Integer> map;
-    // 可以排序、添加、更新、删除
-    // 如果使用队列，
     /**
-     * 查找操作：使用hashMap
-     * 添加、更新、删除都是建立在查找的基础上
-     * 在这里添加和删除位置都是固定的，使用队列
-     * 更新操作有变，使用hashMap+队列
+     * 按时间排序是关键：是的添加是在队尾添加，删除是在队头删除，更新是找到后放到队尾，使用简单队列
+     * 查找操作，使用hashMap映射到队列
      */
 //    private final Map<Integer, Long> timezeroMap;
     private final Queue<Integer>  queue;
