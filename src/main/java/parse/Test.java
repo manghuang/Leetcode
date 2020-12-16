@@ -3,8 +3,8 @@ package parse;
 public class Test {
 
     public static void main(String[] args) {
-        ParseCLassFile parseCLassFile = new ParseCLassFile();
+        ParseClassFile parseCLassFile = new ParseClassFile();
 //        System.out.println(ParseCLassFile.class.getResource("").getPath());
-        parseCLassFile.parse(ParseCLassFile.class.getResource("").getPath(), "test.class", "res.txt");
+        parseCLassFile.parse(ParseClassFile.class.getResource("").getPath(), "test.class", "res.txt");
     }
 }

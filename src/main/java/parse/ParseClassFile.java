@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 解析class文件
  */
-public class ParseCLassFile {
+public class ParseClassFile {
     /**
      * class文件的二进制码
      */
@@ -21,7 +21,7 @@ public class ParseCLassFile {
     /**
      * 构造函数
      */
-    public ParseCLassFile() {
+    public ParseClassFile() {
         this.bytes = new ArrayList<>();
         stringBuilder = new StringBuilder();
     }
