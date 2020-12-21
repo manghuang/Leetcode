@@ -72,6 +72,7 @@ public class Solution6 {
         }
         ListNode pre = head;
         head = pre.next;
+        pre.next = null;
         while(head != null){
             ListNode next = head.next;
             head.next = pre;
