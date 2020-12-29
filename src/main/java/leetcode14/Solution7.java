@@ -83,7 +83,7 @@ public class Solution7 {
                         index++;
                     }
 //                    System.out.println(index);
-                    String name = "";
+                    String name;
                     int num = 1;
                     if(stringBuilder.length() == 1){
                         name = stringBuilder.toString();
