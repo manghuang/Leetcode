@@ -6,22 +6,35 @@ import java.util.List;
 
 public class Solution0 {
 
-    private boolean[][] dp;
+//    private boolean[][] dp;
+    private  int[] dp;
 
     public List<Boolean> canMakePaliQueries(String s, int[][] queries) {
 
         // 表示子串26个字母的奇偶性，使用boolean数组，使用一个int数的不同位数
-        dp = new boolean[s.length()][26];
+//        dp = new boolean[s.length()][26];
+//        for (int i = 0; i < s.length(); i++) {
+//            boolean[] temp = new boolean[26];
+//            if(i == 0){
+//                Arrays.fill(temp, true);
+//            }else {
+//                System.arraycopy(dp[i-1], 0, temp, 0, 26 );
+//            }
+//            int chIndex = s.charAt(i) - 'a';
+//            temp[chIndex] = !temp[chIndex];
+//            dp[i] = temp;
+//        }
+        dp = new int[s.length()];
         for (int i = 0; i < s.length(); i++) {
-            boolean[] temp = new boolean[26];
+            int temp;
             if(i == 0){
-                Arrays.fill(temp, true);
-            }else {
-                System.arraycopy(dp[i-1], 0, temp, 0, 26 );
+                temp = 0;
+            }else{
+                temp = dp[i-1];
             }
             int chIndex = s.charAt(i) - 'a';
-            temp[chIndex] = !temp[chIndex];
-            dp[i] = temp;
+            int a = 1 << chIndex;
+            dp[i] = temp ^ a;
         }
 
         int length = queries.length;
@@ -56,16 +69,28 @@ public class Solution0 {
 //                chNumOdomNum++;
 //            }
 //        }
+
+//        for (int i = 0; i < 26; i++) {
+//            if(left == 0){
+//                if(!dp[right][i]){
+//                    chNumOdomNum++;
+//                }
+//            }else{
+//                if(dp[left-1][i] != dp[right][i]){
+//                    chNumOdomNum++;
+//                }
+//            }
+//        }
+
         for (int i = 0; i < 26; i++) {
+            int a;
             if(left == 0){
-                if(!dp[right][i]){
-                    chNumOdomNum++;
-                }
-            }else{
-                if(dp[left-1][i] != dp[right][i]){
-                    chNumOdomNum++;
-                }
+                a = 0;
+            }else {
+                a = dp[left-1];
             }
+            int b = dp[right];
+            
         }
 
         int needK = chNumOdomNum / 2;
