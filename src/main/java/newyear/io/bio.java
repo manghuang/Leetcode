@@ -1,4 +1,4 @@
-package io;
+package newyear.io;
 
 import java.io.IOException;
 import java.io.InputStream;

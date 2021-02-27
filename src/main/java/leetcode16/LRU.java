@@ -1,3 +1,5 @@
+package leetcode16;
+
 import java.util.HashMap;
 
 public class LRU {
